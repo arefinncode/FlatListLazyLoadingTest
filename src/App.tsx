@@ -96,12 +96,19 @@ const App: React.FC<Props> = (props) => {
 
   console.log(`data.length:  ${people.length}`);
 
+  // render F... renderF....
+
   return (
     <>
       {/*<StatusBar barStyle="dark-content" />*/}
 
       <StatusBar barStyle="light-content" />
-      <SafeAreaView>
+      <SafeAreaView
+        style={
+          {
+            // backgroundColor: 'crimson',
+          }
+        }>
         <FlatList
           data={people}
           onEndReachedThreshold={0.2}
